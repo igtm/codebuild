@@ -23,5 +23,6 @@ phases:
       - echo Writing image definitions file...
       - export IMAGE=$REPOSITORY_URI:$IMAGE_TAG
       - envsubst '$$IMAGE'< imagedefinitions.tmpl.json > imagedefinitions.json
+      - cat imagedefinitions.json
 artifacts:
     files: imagedefinitions.json
