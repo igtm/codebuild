@@ -1,15 +1,6 @@
 [
     {
-    "portMappings": [
-        {
-        "hostPort": 0,
-        "protocol": "tcp",
-        "containerPort": 80
-        }
-    ],
-    "cpu": 500,
-    "memory": 500,
-    "image": "${IMAGE}",
+    "image": "115879861834.dkr.ecr.ap-northeast-1.amazonaws.com/media/blue-green-test-iguchi:latest",
     "name": "app"
     }
 ]
