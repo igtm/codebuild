@@ -12,7 +12,7 @@
         "cpu": 500,
         "environment": [],
         "memory": 500,
-        "image": "nginx:1.13.8-alpine",
+        "image": "115879861834.dkr.ecr.ap-northeast-1.amazonaws.com/media/blue-green-test-iguchi:latest",
         "links": null,
         "name": "app"
       }
