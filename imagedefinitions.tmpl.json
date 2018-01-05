@@ -1,7 +1,6 @@
 {
     "containerDefinitions": [
       {
-        "logConfiguration": null,
         "portMappings": [
           {
             "hostPort": 0,
@@ -10,14 +9,10 @@
           }
         ],
         "cpu": 500,
-        "environment": [],
         "memory": 500,
         "image": "${IMAGE}",
-        "links": null,
         "name": "app"
       }
     ],
-    "memory": "500",
-    "family": "blue-green-test-iguchi",
-    "cpu": "500"
+    "family": "blue-green-test-iguchi"
 }
