@@ -1,18 +1,15 @@
-{
-    "containerDefinitions": [
-      {
-        "portMappings": [
-          {
-            "hostPort": 0,
-            "protocol": "tcp",
-            "containerPort": 80
-          }
-        ],
-        "cpu": 500,
-        "memory": 500,
-        "image": "${IMAGE}",
-        "name": "app"
-      }
+[
+    {
+    "portMappings": [
+        {
+        "hostPort": 0,
+        "protocol": "tcp",
+        "containerPort": 80
+        }
     ],
-    "family": "blue-green-test-iguchi"
-}
+    "cpu": 500,
+    "memory": 500,
+    "image": "${IMAGE}",
+    "name": "app"
+    }
+]
