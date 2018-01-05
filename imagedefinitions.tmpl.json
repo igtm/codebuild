@@ -12,7 +12,7 @@
         "cpu": 500,
         "environment": [],
         "memory": 500,
-        "image": "115879861834.dkr.ecr.ap-northeast-1.amazonaws.com/media/blue-green-test-iguchi:latest",
+        "image": "${IMAGE}",
         "links": null,
         "name": "app"
       }
