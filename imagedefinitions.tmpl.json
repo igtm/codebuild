@@ -1,6 +1,6 @@
 [
     {
-    "imageUri": "115879861834.dkr.ecr.ap-northeast-1.amazonaws.com/media/blue-green-test-iguchi:0.2",
+    "imageUri": "${IMAGE}",
     "name": "app"
     }
 ]
