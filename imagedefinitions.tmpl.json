@@ -1,0 +1,23 @@
+{
+    "containerDefinitions": [
+      {
+        "logConfiguration": null,
+        "portMappings": [
+          {
+            "hostPort": 0,
+            "protocol": "tcp",
+            "containerPort": 80
+          }
+        ],
+        "cpu": 500,
+        "environment": [],
+        "memory": 500,
+        "image": "nginx:1.13.8-alpine",
+        "links": null,
+        "name": "app"
+      }
+    ],
+    "memory": "500",
+    "family": "blue-green-test-iguchi",
+    "cpu": "500"
+}

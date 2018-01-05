@@ -21,6 +21,8 @@ phases:
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo Writing image definitions file...
-      - printf '[{"name":"blue-green-test-iguchi","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+      - export IMAGE=$REPOSITORY_URI:$IMAGE_TAG
+      - cp imagedefinitions.tmpl.json imagedefinitions.json
+      #- envsubst '$$IMAGE'< imagedefinitions.tmpl.json > imagedefinitions.json
 artifacts:
     files: imagedefinitions.json
